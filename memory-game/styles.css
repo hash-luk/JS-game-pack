@@ -1,0 +1,130 @@
+:root {
+    --gray: #403E3C;
+    --creme: #F1D18D;
+    --orange: #AB7809;
+    --brown: #503C12;
+    --white: #FFF;
+
+    --card-size-w: 10rem;
+    --card-size-h: 15.625rem;
+
+    --card-image-size-w: 8.5rem;
+    --card-image-size-h: 14.600rem;
+
+    --grid-size-w: 45vw;
+    --grid-size-h: 43.75rem;
+
+    --button-w: 9.375rem;
+    --button-y: 2rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fredoka', sans-serif;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--gray);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: var(--white);
+}
+
+#content__group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    width: var(--grid-size-w);
+    height: var(--grid-size-h);
+}
+
+button {
+    width: var(--button-w);
+    height: var(--button-y);
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: var(--brown);
+    background-color: var(--creme);
+    box-shadow: 1px 1px rgba(0,0,0,0.8);
+}
+
+button:hover {
+    background-color: var(--orange);
+    color: var(--white);
+}
+
+img {
+    cursor: pointer;
+    width: var(--card-image-size-w);
+    height: var( --card-image-size-h);
+}
+
+#card {
+    width: var(--card-size-w);
+    height: var(--card-size-h);
+    border-radius: 11px;
+    border: 1px dashed var(--brown);
+    background-color: var(--white);
+    box-shadow: 2px 2px 0.2px rgba(0, 0, 0, 0.8);
+}
+
+@media screen and (max-width: 1200px ) {
+
+    .content {
+        margin-top: 0;
+    }
+
+    img {
+        width: 7rem;
+        height: 13rem;
+    }
+}
+
+
+@media screen and (max-width: 992px ) {
+    .content__grid {
+        width: 35vw;
+    }
+
+    img {
+        width: 5rem;
+        height: 10rem;
+    }
+}
+
+@media screen and (max-width: 768px ) {
+    .content__grid {
+        padding: 10px;
+        width: 100vw;
+        height: 20rem;
+    }
+
+    img {
+        width: 7rem;
+        height: 7rem;
+    }
+}

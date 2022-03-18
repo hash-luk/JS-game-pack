@@ -1,0 +1,133 @@
+:root {
+    --very-dark-purple: #05032a;
+    --wine: #902366;
+    --very-light-purple: #c6c3fc;
+    --purple: #8893ff;
+    --blue: #4650d4;
+    --white: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", sans-serif;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    background-color: var(--very-dark-purple);
+  }
+  
+  .content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  p,
+  span {
+    font-size: 22px;
+  }
+  
+  p {
+    color: white;
+    font-weight: 700;
+  }
+  
+  span {
+    margin-left: 0.8rem;
+    animation: 0.8s linear 0s infinite alternate transparecy;
+    font-weight: 300;
+  }
+  
+  .buttons {
+    width: 70%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+  }
+  
+  #start {
+    background-color: var(--wine);
+    color: var(--white);
+    transition: all 0.2s ease-out;
+  }
+  
+  #restart {
+    background-color: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+    transition: all 0.2s ease-in;
+  }
+  
+  #start:hover {
+    background-color: transparent;
+    border: 1px dashed var(--white);
+    transform: scale(1.1);
+  }
+  
+  #restart:hover {
+    background-color: var(--wine);
+    border: none;
+    transform: scale(0.9);
+  }
+  
+  button {
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    box-shadow: 2px 2px 3.5px rgba(0, 0, 0, 0.8);
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .grid {
+    position: relative;
+    width: 35rem;
+    height: 18.75rem;
+    border: 1px solid var(--white);
+    margin-top: 100px;
+  }
+  
+  .block {
+    position: absolute;
+    width: 6.25rem;
+    height: 1.25rem;
+    background-color: var(--white);
+  }
+  
+  .user {
+    position: absolute;
+    width: 6.25rem;
+    height: 1.25rem;
+    background-color: var(--wine);
+  }
+  
+  .ball {
+    position: absolute;
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: var(--very-light-purple);
+    border-radius: 100%;
+  }
+  
+  @keyframes transparecy {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whac-a-Mole</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,300;0,400;0,700;1,100&family=Fredoka:wght@300;400;500&family=Roboto:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <p>Pontuação: <span id="score"></span></p>
+      <p>Tempo: <span id="time-left">60</span></p>
+      <div class="grid">
+        <div class="grid__square" id="1"></div>
+        <div class="grid__square" id="2"></div>
+        <div class="grid__square" id="3"></div>
+        <div class="grid__square" id="4"></div>
+        <div class="grid__square" id="5"></div>
+        <div class="grid__square" id="6"></div>
+        <div class="grid__square" id="7"></div>
+        <div class="grid__square" id="8"></div>
+        <div class="grid__square" id="9"></div>
+      </div>
+      <button id="start" onclick="moveMole()">Iniciar</button>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

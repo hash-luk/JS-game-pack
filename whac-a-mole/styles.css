@@ -1,0 +1,78 @@
+:root {
+    --blue: #0d4d94;
+    --pink: #cd7687;
+    --light-blue: #2b62a5;
+    --purple: #625277;
+    --dark-purple: #271c31;
+    --white: #FFF;
+}
+
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+    background: linear-gradient(0deg,var(--dark-purple) 0%,var(--purple) 30%,var(--light-blue) 100%);
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+p {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+span {
+    font-weight: 300;
+}
+
+.grid {
+    width: 37.5rem;
+    height: 37.5rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__square{
+    height: 12.5rem;
+    width: 12.5rem;
+    border: 1px solid var(--white);
+}
+
+.mole {
+    background-color: var(--light-blue);
+}
+
+button {
+    width: 9rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background-color: var(--pink);
+    color: var(--white);
+    cursor: pointer;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.8);
+}
+
+button:hover {
+    background-color: var(--purple);
+}

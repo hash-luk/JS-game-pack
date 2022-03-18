@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedra, Papel e Tessoura</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="content">
+      <section id="content__choices_result">
+        <p>Escolha da Computador: <span id="ai-choice"></span></p>
+        <p>Sua Escolha: <span id="user-choice"></span></p>
+        <p>Resultado: <span id="result"></span></p>
+      </section>
+
+      <section id="content__buttons">
+        <button id="rock" value="Pedra" onclick="getUserChoice(event)">
+          Pedra
+        </button>
+        <button id="paper" value="Papel" onclick="getUserChoice(event)">
+          Papel
+        </button>
+        <button id="scissors" value="Tessoura" onclick="getUserChoice(event)">
+          Tessoura
+        </button>
+      </section>
+
+      <script src="./app.js" charset="utf-8"></script>
+    </main>
+  </body>
+</html>

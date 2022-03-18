@@ -1,0 +1,95 @@
+:root {
+    --bg-color: #524E4E;
+    --text-color: #FFCD37;
+    --buttonshover-color: #FF9563;
+    --buttons-color: #DA9328;
+    --lose-color: #E83405;
+    --win-color: #8CFF02;
+    --white: #FFF;
+
+    --defaultbutton-width: 6.25rem;
+    --deafultbutton-height: 2rem;
+    --defaultbutton-bradius: 5px;
+    --buttons-fontsize: 0.75rem;
+
+    --content-boxsize-width: 31.25rem;
+    --content-boxsize-height: 21,875rem;
+
+    --half-size: 50%;
+    --text-font-size: 1.25rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Exo', sans-serif;
+    -webkit-font-smoothing: antialised;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15.625rem;
+    justify-content: space-between;
+    width: var(--content-boxsize-width);
+    height: var(--content-boxsize-width);
+}
+
+section {
+    display: flex;
+    width: 100%;
+    height: var(--half-size);
+}
+
+section#content__choices_result{
+    padding-left: 3.125rem;
+    color: var(--text-color);
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-evenly;
+    font-size: var(--text-font-size);
+}
+
+p {
+    font-weight: 700;
+}
+
+span {
+    font-weight: 300;
+    color: var(--white);
+}
+
+section#content__buttons{
+    align-items: center;
+    justify-content: space-evenly;
+    transform: translateY(-3.125rem);
+}
+
+button {
+    width: var(--defaultbutton-width);
+    height: var(--deafultbutton-height);
+    border: none;
+    border-radius: var(--defaultbutton-bradius);
+    font: 400 var(--buttons-fontsize);
+    color: var(--white);
+    background-color: var(--buttons-color);
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--buttonshover-color);
+}
+
+
